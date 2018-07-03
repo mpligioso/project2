@@ -12,7 +12,7 @@ const flash        = require('connect-flash');
 const session      = require('express-session');
 const MongoStore   = require('connect-mongo')(session);
 
-const passportSetup = require('./passport/setup.js');
+// const passportSetup = require('./passport/setup.js');
 
 mongoose.Promise = Promise;
 mongoose
@@ -56,7 +56,7 @@ app.use(session({
 
 app.use(flash());
 
-passportSetup(app);
+// passportSetup(app);
 
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
