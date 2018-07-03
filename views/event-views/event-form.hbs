@@ -1,0 +1,75 @@
+<h2>Add an event</h2>
+<form method="POST" action="/add-event">
+<h3>About</h3>
+  <label>
+    Name:
+    <input type="text" name="title" placeholder="Fancy Dinner Party!" />
+  </label>
+
+  <br/>
+
+  <label>
+    Description:
+    <input type="text" name="description" placeholder="Wear your best party outfit!" />
+  </label>
+
+  <br/>
+
+  <label>
+    Price:
+    <input type="text" name="price" placeholder="Free!" />
+  </label>
+
+  <br/>
+
+  <label>
+    Event Type:
+    <input type="text" name="eventCategory" placeholder="Dinner Party" />
+  </label>
+
+  <br/>
+
+  <label>
+    Photo Url:
+    <input type="text" name="photoUrl" placeholder="http://www.example.com/super-exciting-event.jpg" />
+  </label>
+
+<h3>Contact</h3>
+  <label>
+    Email:
+    <input type="email" name="contact.email" placeholder="contact@here.example" />
+  </label>
+
+  <br/>
+
+    <label>
+    Telephone:
+    <input type="text" name="contact.telephone" placeholder="1-800-867-5309" />
+  </label>
+
+  <br/>
+
+<h3>Location</h3>
+  <label>
+    Address:
+    <input type="text" name="location.address" placeholder="40 rue du Colisée" />
+  </label>
+
+  <br/>
+
+  <label>
+    City:
+    <input type="text" name="location.city" placeholder="Paris" />
+  </label>
+
+  <br/>
+
+  <label>
+    Zip:
+    <input type="text" name="location.postalCode" placeholder="75008" />
+  </label>
+
+  <br/>
+
+  <button>Save This Event</button>
+</form>

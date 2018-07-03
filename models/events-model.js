@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const eventSchema = new Schema ( {
 
   frenchGovID: {type: String},
-  title: {type: String},
+  title: {type: String, required: true},
   price: {type: String},
   // startDate: {type: String},
   // endDate: {type: String },
@@ -22,7 +22,8 @@ const eventSchema = new Schema ( {
     longitude: {type: String},
     latitude:  {type: String},
   },
-  eventCategory: {type: String}
+  eventCategory: {type: String},
+  photoUrl: {type: String}
 }, {
   timestamps: true
 });
